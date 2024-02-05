@@ -1,0 +1,143 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item sidebar-profile mt-4">
+            <a href="#">
+                <div>
+                    {#                    <div class="profile-thumb">#}
+                    {#                        <img src="../../static/adminResourses/images/E2.jpg" alt="profile">#}
+                    {#                    </div>#}
+                    {#                    <div class="mt-2">#}
+                    {#                        <h3 class="mb-1 profile-name">vivek</h3>#}
+                    {#                        <p class="profile-description">india</p>#}
+                    {#                    </div>#}
+                </div>
+            </a>
+        </li>
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="index.html">-->
+        <!--<i class="mdi mdi-cards-variant menu-icon"></i>-->
+        <!--<span class="menu-title">Dashboard</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="pages/widgets/widgets.html">-->
+        <!--<i class="mdi mdi-cube-outline menu-icon"></i>-->
+        <!--<span class="menu-title">Widgets</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="mdi mdi-heart-outline menu-icon"></i>
+                <span class="menu-title">Manage Area</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_area">Add Area</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_area">View Area</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false"
+               aria-controls="ui-advanced">
+                <i class="mdi mdi-layers menu-icon"></i>
+                <span class="menu-title">Manage Branch</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-advanced">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_branch">Add Branch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_branch">View Branch</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
+               aria-controls="form-elements">
+                <i class="mdi mdi-view-grid menu-icon"></i>
+                <span class="menu-title">Manage Account Type</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_account_type">Add Account Type</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_account_type">View Account Type</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
+                <i class="mdi mdi-pencil-box-outline menu-icon"></i>
+                <span class="menu-title">Manage Account Info</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="editors">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_account_info">Add Account Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_account_info">View Account Info</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                <i class="mdi mdi-chart-pie menu-icon"></i>
+                <span class="menu-title">Manage Loan Type</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_loan_type">add Loan Type</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_loan_type">view Loan Type</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                <i class="mdi mdi-table-large menu-icon"></i>
+                <span class="menu-title">Manage Loan Info</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_loan_info">add Loan Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_loan_info">view Loan Info</a></li>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/view_complain">
+                <i class="mdi mdi-comment-alert menu-icon"></i>
+                <span class="menu-title">Manage Complain</span>
+            </a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/view_feedback">
+                <i class="mdi mdi-email-open-outline menu-icon"></i>
+                <span class="menu-title">Manage Feedback</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <i class="mdi mdi-file-document menu-icon"></i>
+                <span class="menu-title">Manage Forms</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/admin/load_form">add Forms </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/view_form">view Forms</a></li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+</nav>
+
