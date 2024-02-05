@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AI Banking System</title>
+    <!-- base:css -->
+    <link rel="stylesheet" href="../../static/adminResourses/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../static/adminResourses/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../static/adminResourses/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../static/adminResourses/images/favicon.png"/>
+</head>
+
+<body class="sidebar-light">
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+
+    {% include 'admin/header.html' %}
+
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+
+        {% include 'admin/menu.html' %}
+
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row grid-margin">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Add Account Info</h4>
+                                <form class="cmxform" action="/admin/insert_account_info" method="post">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Account Type</label>
+                                            <select name="accountInfoAccountTypeId" class="form-control"
+                                                    id="exampleSelectGender">
+                                                {% for account_type in account_type_vo_list %}
+                                                    <option value="{{ account_type['account_type_id'] }}">
+                                                        {{ account_type['account_type_name'] }}
+                                                    </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cname">Minimum Balance</label>
+                                            <input id="cname" class="form-control" name="accountInfoMinimumBalance"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="cname">Maximum Balance</label>
+                                            <input id="cname" class="form-control" name="accountInfoMaximumBalance"
+                                                   type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                <label for="exampleTextarea1">Description</label>
+                                                <textarea class="form-control" id="exampleTextarea1"
+                                                          name="accountInfoDescription"
+                                                          rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cname">Occupation Type</label>
+                                            <input id="cname" class="form-control" name="accountInfoOccupationType"
+                                                   minlength="2"
+                                                   type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cname">Rate</label>
+                                            <input id="cname" class="form-control" name="accountInfoRate" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cname">Required Document </label><br></br>
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"
+                                                       name="accountInfoDocument" value="aadhar card">
+                                                aadhar card
+                                                <i class="input-helper"></i></label><br>
+                                            <label for="cname">Foreign Trade </label><br></br>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="accountInfoForeignTrade"
+                                                                   id="optionsRadios1" value="on">
+                                                            ON
+                                                            <i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input type="radio" class="form-check-input"
+                                                                   name="accountInfoForeignTrade"
+                                                                   id="optionsRadios2"
+                                                                   value="off" checked="">
+                                                            OFF
+                                                            <i class="input-helper"></i></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="btn btn-primary" type="submit" value="Submit">
+
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+
+            {% include 'admin/footer.html' %}
+
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- base:js -->
+<script src="../../static/adminResourses/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="../../static/adminResourses/js/off-canvas.js"></script>
+<script src="../../static/adminResourses/js/hoverable-collapse.js"></script>
+<script src="../../static/adminResourses/js/template.js"></script>
+<script src="../../static/adminResourses/js/settings.js"></script>
+<script src="../../static/adminResourses/js/todolist.js"></script>
+<!-- endinject -->
+<!-- plugin js for this page -->
+<script src="../../static/adminResourses/js/jquery.validate.min.js"></script>
+<script src="../../static/adminResourses/js/bootstrap-maxlength.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- Custom js for this page-->
+<script src="../../static/adminResourses/js/form-validation.js"></script>
+<script src="../../static/adminResourses/js/bt-maxLength.js"></script>
+<!-- End custom js for this page-->
+</body>
+
+</html>
